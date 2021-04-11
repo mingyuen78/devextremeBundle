@@ -160,4 +160,33 @@ class DevExFilterHelper {
         }
         return $result;
     }
+
+    public static function GetSqlSortByArray($item) {
+        $result = "";
+        for($i=0; $i < count($item); $i++) {
+            $result .= $item[$i]->selector; 
+            $result .= ($item[$i]->desc)?" DESC":" ASC";
+            if ($i < count($item) - 1) {
+                $result .= ", ";
+            }               
+        }
+        
+        return $result;
+    }
+
+    public static function QueryBuilderHandler($map, $wherestr) {
+        if (is_array($map)) {
+            $returnStr = $wherestr;
+
+            $keys = array_keys($map);
+            for($i=0; $i < count($keys); ++$i) {
+                $tempStr = str_replace($keys[$i],$map[$keys[$i]], $returnStr);
+                $returnStr = $tempStr;
+            }
+
+            return $returnStr;
+        } else {
+            return "";
+        }    
+    }
 }?>
