@@ -1,5 +1,5 @@
 <?php
-namespace AppBundle\Util;
+namespace App\AppBundle\Util;
 
 
 class DevExFilterHelper {

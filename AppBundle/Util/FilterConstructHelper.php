@@ -1,7 +1,7 @@
 <?php
-namespace AppBundle\Util;
+namespace App\AppBundle\Util;
 
-use AppBundle\Generic\GridArguments;
+use App\AppBundle\Generic\GridArguments;
 
 
 class FilterConstructHelper {
