@@ -6,7 +6,7 @@ Just place the src/AppBundle folder into src. Bind it under services.yaml. Thats
 
 add in services.yaml
 App\AppBundle\:
-resource: "../src/AppBundle/"
+    resource: "../src/AppBundle/"
 
 https://isgoodstuff.com/2021/04/11/devexpress-grid-to-symfony-controller-doctrine-part-1/
 
