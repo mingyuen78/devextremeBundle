@@ -1,5 +1,5 @@
 <?php
-namespace AppBundle\Generic;
+namespace App\AppBundle\Generic;
 
 class GridArguments
 {

@@ -1,5 +1,5 @@
 <?php
-namespace AppBundle\Util;
+namespace App\AppBundle\Util;
 /* Remember to change the util js file to reflect in script. */   
 abstract class EnumError {
     const ALLGOOD = "00000";
